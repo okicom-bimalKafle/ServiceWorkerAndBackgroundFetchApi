@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "target": "esnext",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "types": ["node"],
+    "lib": ["esnext","DOM"],
+    "composite": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue"
+  ],
+  "exclude": ["node_modules"]
+}

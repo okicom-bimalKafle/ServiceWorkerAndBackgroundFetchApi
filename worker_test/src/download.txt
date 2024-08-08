@@ -1,0 +1,39 @@
+// var url1 =
+//   "https://fuiui5bpm5.execute-api.ap-northeast-1.amazonaws.com/multiuser/fileupload";
+// var url = `https://serviceworker.knowledgev.dev.direct4b.app/upload`;
+// var url2 = "https://naouchi-test2.s3.ap-northeast-1.amazonaws.com/";
+
+// const downloadFile = async () => {
+//   try {
+//     const registration = await navigator.serviceWorker.ready;
+//     const bgFetch = await registration.backgroundFetch.fetch(
+//       `movie-1`,
+//       ["https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"],
+//       {
+//         icons: [
+//           {
+//             src: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+//             sizes: "192x192",
+//             type: "image/png",
+//           },
+//         ],
+//         title: `Downloading`,
+//         downloadTotal: 1024 * 1024 * 1000,
+//         headers: {
+//           "X-Operation-Type": "download", // Custom header to indicate download
+//         },
+//       }
+//     );
+//     // Update the UI.
+
+//     bgFetch.addEventListener("progress", () => {
+//       const downloaded = bgFetch.downloaded;
+//       const downloadTotal = bgFetch.downloadTotal;
+//       const progress = (downloaded / downloadTotal) * 100;
+//       console.log(`Download progress: ${progress.toFixed(2)}%`);
+//       // Update the UI with the progress
+//     });
+//   } catch (error) {
+//     console.error("Background fetch failed:", error);
+//   }
+// };
